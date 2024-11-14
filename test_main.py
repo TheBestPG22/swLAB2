@@ -8,17 +8,14 @@ class AdderTester(unittest.TestCase):
         self.calc = Add_num()
 
     def test_add(self):
-        result =  self.calc.adder(self, 1 , 6)
+        result =  self.calc.adder(1 , 6)
         self.assertEqual(result, 7)
 
-        result =  self.calc.adder(self , 11 , 0)
+        result =  self.calc.adder(11 , 0)
         self.assertEqual(result, 11)
 
-        result =  self.calc.adder(self , -1 , 0)
+        result =  self.calc.adder(-1 , 0)
         self.assertEqual(result, -1)
 
-        result =  self.calc.adder(self , -1 , -6)
+        result =  self.calc.adder(-1 , -6)
         self.assertEqual(result, -7)
-
-
-
