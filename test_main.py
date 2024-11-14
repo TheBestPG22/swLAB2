@@ -1,19 +1,24 @@
 import unittest
 
-from main import adder
+from main import Add_num
 class AdderTester(unittest.TestCase):
+
+    def setUp(self):
+        # This method is run before each test, useful for setup code.
+        self.calc = Add_num()
+
     def test_add(self):
-        result = adder(1, 6)
-        self.AssertEqual(result, 7)
+        result =  self.calc.adder(self, 1 , 6)
+        self.assertEqual(result, 7)
 
-        result = adder(11, 0)
-        self.AssertEqual(result, 11)
+        result =  self.calc.adder(self , 11 , 0)
+        self.assertEqual(result, 11)
 
-        result = adder(-1, 0)
-        self.AssertEqual(result, -1)
+        result =  self.calc.adder(self , -1 , 0)
+        self.assertEqual(result, -1)
 
-        result = adder(-1, -6)
-        self.AssertEqual(result, -7)
+        result =  self.calc.adder(self , -1 , -6)
+        self.assertEqual(result, -7)
 
 
 
