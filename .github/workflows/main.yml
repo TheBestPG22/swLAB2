@@ -3,9 +3,9 @@ name: Test Calculator
 
 on:
   push:
-    branches: [ "swLAB2" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "swLAB2" ]
+    branches: [ "master" ]
     
 jobs:
   test:
