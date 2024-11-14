@@ -1,3 +1,4 @@
-def adder(a, b):
-    return a + b
+class Add_num:
+        def adder(self , a , b):
+            return a + b
 
